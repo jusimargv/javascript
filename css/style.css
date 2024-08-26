@@ -1,0 +1,263 @@
+/* Style CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mohave:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root{
+  --cor-primaria:#000000;
+  --cor-secundaria:#8A7AFA;
+  --cor-terciaria:#A6BC09;
+  --cor-quarter:#ffffff;
+  --fonte-primaria:"Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+  --gradient: linear-gradient( to right,#01415B,#005148,#019587,#A6BC09,#CCEA8D);
+}
+
+* {
+   margin: 0; /* reset de margem*/
+   border: 0; /* reset de borda*/
+   padding: 0;/* reset de padding*/
+   
+   
+}
+
+.apresentacao__corpo{
+  display: flex; /* adiciona display Flex*/
+  justify-content: center; /* centralizando itens ao centro do bloco*/ 
+  background: var(--gradient);
+  color: var(--cor-quarter); /*cor branca da fonte*/
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none; /* lista sem aqueles pontinhos*/
+}
+
+a{
+  text-decoration: none; /* link ancora sem sublinhado*/
+}
+
+img{
+  max-width: 100%; /* imagem resposiva em qualquer tamanho de tela*/
+  display: block; /* todas as imagens com display tipo Block */
+}
+
+button{
+  border: 0; /* reset de borda*/
+  background-color: transparent; /* fundo transparente*/
+  cursor: pointer; /* cursor da mãozinha */
+}
+.cabecalho{
+  width: 100%;
+  height: 50px; /* Ajuste conforme necessário */
+  padding:10px  0px 0px 10px;
+  position: fixed;
+}
+
+.cabecalho__menu {
+  display: flex;
+  
+  gap: 2%;
+}
+
+.cabecalho__menu__link{
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria); /* instalando fonte*/
+  font-size: 24px;
+  font-weight: 600;
+  
+}
+
+.cabecalho__menu__link:hover{
+  color: var(--cor-terciaria);
+}
+
+.apresentacao {
+  width: 1216px;
+  height: auto;
+  font-size: 16px;
+  display: flex; /* adiciona display Flex */
+  align-items: center; /* alinhando os itens ao centro */
+  justify-content: space-between; /* ajustando os espaços do itens */
+  gap: 40px; /* espaçamento entres os itens do bloco */
+  margin: 5%; /* centraliza o bloco no contêiner */
+}
+
+  
+
+.apresentacao__about{
+  width: 100%;
+  height: auto;
+  top: 250px;
+  font-size: 10px;
+  display: flex; /* adiciona display Flex*/
+  align-items: center; /* alinhando os itens ao centro*/
+  justify-content: space-between; /* ajustando os espaços do itens*/
+  gap: 40px; /* espaçamento entres os itens do bloco*/
+  margin: 5%; /* centraliza o bloco no contêiner */
+  box-sizing: border-box;
+}
+
+.apresentacao__conteudo{
+  width: 50%;
+  font-size: 14px;
+  display: flex; /* adiciona display Flex*/
+  flex-direction: column; /* deixando os itens posicionados em colunas*/
+  gap:10px
+}
+
+.apresentacao__conteudo__about{
+  width: 100%;
+  margin: 42px;
+  font-size: 10px;
+  display: flex; /* adiciona display Flex*/
+  flex-direction: column; /* deixando os itens posicionados em colunas*/
+ 
+  
+ }
+
+.apresentacao___titulo__destaque{
+ color:var(--cor-secundaria); /* cor deo texto em destaque do titulo*/
+}
+
+.apresentacao__conteudo__titulo{
+ font-size: 2.25rem;
+ border:0.125rem ;
+ padding: 0.3125rem;
+ 
+}
+
+.apresentacao__conteudo__titulo__about{
+  font-size: 2.25rem;
+  border:2px ;
+  padding: 5px;
+  
+ }
+
+  /* imagem resposiva*/
+  
+ .apresentacao__imagem {
+  width: 35rem;
+  display: flex; 
+  box-sizing: border-box;
+ } 
+
+ 
+ .apresentacao__conteudo__texto{
+  font-size: 1.6rem;
+  font-family: var(--fonte-secundaria); /* instalando fonte*/
+  font-weight: 400;
+  border: 2px ;
+  padding: 5px;
+  box-sizing: border-box;
+ }
+
+ .apresentacao__texto__destaque{
+  color: var(--cor-secundaria);
+ }
+
+.apresentacao__conteudo__links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+  
+ .apresentacao__links__navegacao {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 16px;
+  margin: 1%;
+  font-weight:700;
+  font-family: var(--fonte-secundaria); /* instalando fonte*/
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  width: 10rem;
+  height: 40px;
+  border-radius: 16px;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-fifth);
+  border: 3px solid var(--cor-secundaria);
+  box-sizing: border-box;
+ }
+  
+  .apresentacao__links__navegacao:hover{
+  color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
+ }
+ 
+ .apresentacao__links__subtitulo{
+  font-family:var(--fonte-primaria); /* instalando fonte*/
+  font-weight: 400;
+  font-size: 1.5rem;
+  align-items: center;
+  display: flex;
+
+ }
+ 
+ h1,h2,h3,h4,h5,h6{
+  font-family:var(--fonte-primaria); /* instalando fonte*/
+  font-weight: 400;
+ }
+ 
+ .rodape {
+  width: 100%;
+  height: 50px; /* Ajuste conforme necessário */
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--fonte-secundaria); /* instalando fonte*/
+  text-align: center;
+  position: fixed; /* alterado de absolute para fixed */
+  bottom: 0;
+  padding: 24px;
+  background-color: var(--cor-secundaria);
+  background: var(--gradient);
+  box-sizing: border-box;
+}
+
+ 
+.rodape__link{
+color: var(--cor-primaria);
+
+}
+
+.rodape__link:hover{
+  color: var(--cor-terciaria);
+}
+
+@media(max-width:1216px){
+
+  .cabecalho{
+    padding: 10%;
+    
+  }
+  .cabecalho__menu{
+    justify-content: center;
+  }
+
+  .apresentacao{
+    flex-direction: column-reverse;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .apresentacao__about{
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao__conteudo{
+    width: auto;
+  }
+
+}
+
+
+
+
+
+
+ 
+
+  

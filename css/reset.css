@@ -1,0 +1,90 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    margin: 0; /* reset de margem*/
+    border: 0; /* reset de borda*/
+    padding: 0;/* reset de padding*/
+    box-sizing: border-box; /* border-box ativo !!!*/
+    font-family: "Roboto Flex", sans-serif; /* instalando a fonte roboto-Flex*/ 
+    color:#ffffffff;/* Cor da fonte*/
+ }
+ 
+ ul{
+     list-style: none; /* lista sem aqueles pontinhos*/
+ }
+ 
+ a{
+     text-decoration: none; /* link ancora sem sublinhado*/
+ }
+ 
+ img{
+     max-width: 100%; /* imagem resposiva em qualquer tamanho de tela*/
+     display: block; /* todas as imagens com display tipo Block */
+ }
+ 
+ button{
+     border: 0; /* reset de borda*/
+     background-color: transparent; /* fundo transparente*/
+     cursor: pointer; /* cursor da mãozinha */
+ }
+ 
+ h1, h2, h3, h4, h5, h6{
+     font-family: "Mohave", sans-serif; /* instalando a fonte Mohave*/
+ }
+ html{
+     background-color: #060608;/* fundo do projeto preto*/
+ }
+ 
+ .container{
+     width: 100%;/* container responsivo*/
+     max-width: 1246px; /* ajuste do tamanho da tela*/
+     margin: 0 auto; /* margem auto*/
+     padding: 0 15px; /* texto responsivo no canto de telo*/
+ }
